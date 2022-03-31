@@ -1,0 +1,52 @@
+<!---
+
+  <button class="w3-button w3-xlarge w3-circle" onclick="myFunction('#D71E1E')" style="background-color: #D71E1E;">+</button>
+  <button class="w3-button w3-xlarge w3-circle" onclick="myFunction('#F08F1E')" style="background-color: #F08F1E;">+</button>
+  <button class="w3-button w3-xlarge w3-circle" onclick="myFunction('#EBE520')" style="background-color: #EBE520;">+</button>
+  <button class="w3-button w3-xlarge w3-circle" onclick="myFunction('#59B664')" style="background-color: #59B664;">+</button>
+  <button class="w3-button w3-xlarge w3-circle" onclick="myFunction('#1181D0')" style="background-color: #1181D0;">+</button>
+  <button class="w3-button w3-xlarge w3-circle" onclick="myFunction('#5D2F8F')" style="background-color: #5D2F8F;">+</button>
+</div>
+
+---->
+
+
+<div class="w3-container w3-dropdown-hover w3-padding" style="background-color: var(--Main-Color); color: var(--Opp-Main-Color); margin-top: -3%;"><p style="font-size:28px;"><span style="font-size: 1em; color: var(--primary-color);">
+  <i class="fas fa-paint-brush"></i>
+</span>
+</p>
+	<div class="w3-container w3-dropdown-content w3-card-4 w3-padding" style="width:330px; background-color: var(--Accent-Color); color: var(--Opp-Main-Color); border: 1px solid gray; margin-right: 20px; right:0; margin-top: -2%;">
+		<div class="w3-container" style="margin: 0 auto;">
+						<p> <span style="font-size: 22px;">
+  <i class="fas fa-adjust"></i>
+<a id="theme-toggle"  onclick="modeSwitcher()"></a></span> </p>
+						<p><em>Pick a colour</em></p>
+			{% for item in site.data.colours %}
+				<div style=" float: left; margin: 0 auto; padding: 7px 7px 7px 7px;">
+					<button class="w3-button w3-xlarge w3-circle" onclick="myFunction('{{ item.code }}')" style="background-color: {{ item.code }}; color:white;">+</button>
+				</div>
+			{% endfor %}
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+</div>
+
+
+<!---
+
+<script type="text/javascript">
+	// var printColours = colours.toString();
+	//document.write(printColours);
+
+	var RandColours = colours[Math.floor(Math.random() * colours.length)];
+	//document.write(RandColours);
+
+	document.addEventListener('DOMContentLoaded', () => {
+    
+	myFunction(RandColours);
+
+    })
+
+</script>
+---->
+

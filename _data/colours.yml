@@ -1,0 +1,16 @@
+- name: Red
+  code: '#f01513'
+- name: Orange
+  code: '#f4640b'
+- name: Yellow
+  code: '#f7ac14'
+- name: Green
+  code: '#00a143'
+- name: Blue
+  code: '#1181D0'
+- name: Indigo
+  code: '#1c52ec'  
+- name: Purple
+  code: '#4632e4'
+- name: Pink
+  code: '#d260dd'

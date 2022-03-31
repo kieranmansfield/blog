@@ -1,0 +1,70 @@
+
+<!----
+
+      <div class="w3-display-container w3-red w3-padding-64" style=" min-height: 850px;"> 
+        <div class="w3-content w3-center">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the center of the Greater Tokyo Area,
+        and the most populous metropolitan area in the world.</p>
+        </div>
+      </div>
+--->
+
+      <div class="w3-display-container w3-padding-64 w3-row" id="SubFooter" style="border-image: linear-gradient(to right,#f01513 10%,#f4640b 20%,#f7ac14 33%,#00a143 55%,#1181D0 66%, #1c52ec 77%, #4632e4 88%, #d260dd 99%) 100% 0 0 0/12px 0 0 0;">
+
+        <div class="w3-container"> 
+          <div class="w3-container w3-padding w3-quarter">
+            <h2>Feeds</h2>
+            <p><i class="fas fa-rss"></i> <a href="{{ site.url }}/rss.xml">RSS Feed</a></p>
+            <p><i class="fas fa-atom"></i> <a href="{{ site.url }}/atom.xml">Atom Feed</a></p>
+            <p><i class="fas fa-code"></i> <a href="{{ site.url }}/feed.json">JSON Feed</a></p>
+          </div>
+
+          <div class="w3-container w3-padding w3-quarter">
+            <h2>Social</h2>
+            <p><i class="fab fa-twitter"></i> <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/{{ site.github_username }}">Github</a></p>
+          </div>
+
+          <div class="w3-container w3-padding w3-quarter">
+            <h2>Pre-Footer</h2>
+            <p>This is a pre-footer</p>
+            <p>It comes before the footer</p>
+            <p>and after the main content.</p>
+          </div>
+
+            <div class="w3-container w3-padding w3-quarter">
+            <h2>Pre-Footer</h2>
+            <p>This is a pre-footer</p>
+            <p>It comes before the footer</p>
+            <p>and after the main content.</p>
+          </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="w3-container w3-padding-24 w3-center" id="Footer">
+      <h5>Footer</h5>
+      <p>{%- if social.twitter -%}<a rel="me" href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}" title="{{ social.twitter | escape }}"></a>{%- endif -%}
+      </p>
+    </footer> 
+
+
+<script>
+function myFunction(colour) {
+  document.body.style.setProperty("--primary-color", colour);
+  sessionStorage.setItem('colour', colour);
+}
+
+</script>
+
+    <script src="/assets/js/mode-switcher.js"></script>
+        <script type="text/javascript" src="/assets/js/colours.js"></script>
+
+  </body>
+
+</html>
+

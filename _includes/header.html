@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    {% include head.html %}
+
+<script type="text/javascript">
+  
+  var colours = [];
+
+  </script>
+
+  {% for item in site.data.colours %}
+  <script type="text/javascript">
+    colours.push("{{ item.code }}");  
+  </script>
+  {% endfor %}
+
+
+
+  <body>
+
+
+
+<!---
+<button id="theme-toggle">Switch to dark mode</button>
+--->
+
+ <div class="w3-bar w3-padding" style="border-image: linear-gradient(to right,#f01513 10%,#f4640b 20%,#f7ac14 33%,#00a143 55%,#1181D0 66%, #1c52ec 77%, #4632e4 88%, #d260dd 99%) 100% 0 0 0/12px 0 0 0;">
+  <div class="w3-container" style="margin-top: 1%;">
+    <h1 class="w3-bar-item w3-JosefinSans" style="font-weight: bolder;"><a href="{{ site.url }}" id="SiteTitle" >KM</a></h1>
+    {% include navigation.html %}
+  </div>  
+</div> 
+

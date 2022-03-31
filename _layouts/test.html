@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{{ page.title }}</title>
+
+	<link rel="stylesheet" href="/assets/css/styles.css">
+
+<script type="text/javascript">
+
+document.addEventListener('DOMContentLoaded', () => {
+
+	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		sessionStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	}
+
+	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+		document.documentElement.setAttribute('data-theme', 'light');
+		sessionStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+
+	}
+})
+
+</script>
+
+<!--
+	<link rel="stylesheet" href="/assets/css/theme.css">
+--->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+	{% feed_meta %}
+	<link href="{{ site.url }}/rss.xml" type="application/rss+xml" rel="alternate" title="KieranMansfield.com" />
+	<link href="{{ site.url }}/feed.json" type="application/json" rel="alternate" title="KieranMansfield.com" />
+
+	{% seo %}
+
+
+	<style type="text/css">
+/*	  
+	    body {
+	      transition: background-color, color 2s;
+
+	    }
+
+		#MainContainer {
+		  min-height: 1000px; 
+		  margin: 0px auto; 
+		}
+*/
+
+	</style>
+
+
+
+</head>
+
+
+ <body>
+  <main id="main-wrapper">
+   <div class="container">
+
+    
+    <div class="container">
+     <div class="content-wrapper">
+      <h1 class="title">Welcome to the Dark Side</h1>
+      <p class="subtitle">Dark Mode using CSS variables and control it using javascript.</p>
+<a id="theme-toggle" onclick="modeSwitcher()"></a>
+     </div>
+    </div>
+
+
+<!---
+<div class="content-wrapper">
+{{ content }}
+</div>
+---->
+
+
+   </div>
+  </main>
+
+  <script src="/assets/js/mode-switcher.js"></script>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

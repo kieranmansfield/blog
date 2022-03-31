@@ -1,0 +1,49 @@
+
+
+body {
+    background-color: white;
+
+/*  background-color: rgb(250, 250, 250);
+*/
+    color:black;
+  }
+
+  #SiteTitle:hover {
+    color:black;
+  }
+
+  #MainContainer {
+    background-image: linear-gradient(#f9f9f9, white, white, white, white, white, white);
+
+
+/*    background-image: linear-gradient(#f9f9f9, rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250));
+*/
+
+  }
+
+
+  #SubFooter {
+ /*   background-color: black;
+ */
+    background-image: linear-gradient(black, black, black, black, #161616);
+    color:white;
+  }
+
+  #Footer {
+    background-color: black;
+    color:white;
+  }
+
+  #Box2 {
+  /* background-color: #efefef;
+*/
+
+  background-image: linear-gradient(#F0F0F0, #F8F8F8, #F8F8F8, #F8F8F8, #F0F0F0, #E8E8E8);
+  min-height: 600px;
+  }
+
+  #Box3 {
+  background-image: linear-gradient(#efefef, white, white, white, white, white);
+  min-height: 600px;
+  }
+
